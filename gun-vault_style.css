@@ -1,0 +1,887 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#747070, #625d5d);
+}
+
+.header {
+    background-color: #000;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    margin-top: -20px;
+    z-index: 9999;
+
+}
+
+.header .slidedown {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: slidedown .4s forwards;
+}
+
+@keyframes slidedown {
+    from {
+        top: -250px;
+    }
+
+    to {
+        top: 0;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .2);
+    }
+}
+
+.icon {
+
+    color: #fff;
+    font-size: 30px;
+    padding: 3px 20px;
+    position: fixed;
+    right: 10px;
+    top: 5%;
+    transform: translateY(-50%);
+}
+
+i:hover {
+    color: #c90000;
+}
+
+/* -----------------------------------------------logo------------------------------------------ */
+.logo {
+    position: fixed;
+    top: -10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.logo img {
+    width: 80px;
+    padding-top: 0;
+    height: auto;
+}
+
+/* -------------------------------------------------------navigation bar---------------------------------- */
+nav {
+    position: fixed;
+    width: 790px;
+    height: 45px;
+    background: #222;
+    border-radius: 8px;
+    margin-top: 2px;
+    padding-left: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+nav span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(45deg, #4f1919, #ff3333);
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+nav a:nth-child(1):hover~span {
+    left: 0;
+}
+
+nav a:nth-child(2):hover~span {
+    left: 106px;
+}
+
+nav a:nth-child(3):hover~span {
+    left: 213px;
+    width: 94px;
+}
+
+nav a:nth-child(4):hover~span {
+    left: 306px;
+    width: 130px;
+}
+
+nav a:nth-child(5):hover~span {
+    left: 455px;
+    width: 155px;
+}
+
+nav a:nth-child(6):hover~span {
+    left: 620px;
+    width: 161px;
+}
+
+
+/* -----------------------------------------------home page----------------------------------- */
+.home-page {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.text {
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    color: #fff;
+}
+
+/* -----------------------------------------video text-----------------------------d */
+section {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section h2 {
+    font-size: 6em;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+}
+
+section h2 span {
+    transition: 1s;
+    font-family: "Press Start 2P", system-ui;
+}
+
+section h2 #first {
+    color: #c90000;
+}
+
+section h2 span:nth-child(10n+1) {
+    transition-delay: 0s;
+}
+
+section h2 span:nth-child(10n+2) {
+    transition-delay: 0.05s;
+}
+
+section h2 span:nth-child(10n+3) {
+    transition-delay: 0.10s;
+}
+
+section h2 span:nth-child(10n+4) {
+    transition-delay: 0.15s;
+}
+
+section h2 span:nth-child(10n+5) {
+    transition-delay: 0.20s;
+}
+
+section h2 span:nth-child(10n+6) {
+    transition-delay: 0.25s;
+}
+
+section h2 span:nth-child(10n+7) {
+    transition-delay: 0.30s;
+}
+
+section h2 span:nth-child(10n+8) {
+    transition-delay: 0.35s;
+}
+
+section h2 span:nth-child(10n+9) {
+    transition-delay: 0.40s;
+}
+
+section:hover h2 span {
+    filter: blur(20px);
+    opacity: 0;
+    transform: scale(2);
+}
+
+section p {
+    transition: 1.5s;
+}
+
+section:hover p {
+    filter: blur(20px);
+    opacity: 0;
+    transform: scale(7);
+}
+
+/* ---------------Modern pistols----------------- */
+.Pistols {
+    height: auto;
+    width: 100%;
+}
+
+.title {
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin: 0 auto 40px;
+    position: relative;
+    line-height: 60px;
+    color: #f3f4f8;
+
+}
+
+
+.title::after {
+    content: '';
+    height: 5px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container {
+    height: auto;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    gap: 90px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* ------------------------------------------cont1------------------------------------------------------- */
+.cont1 {
+    height: 420px;
+    width: 540px;
+    background: radial-gradient(rgb(112, 110, 110), #4b4747);
+    border-radius: 10px;
+    margin-right: 20px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.cont1 img {
+    height: 66%;
+    width: 80%;
+    object-fit: fill;
+    margin-top: 50px;
+    margin-left: 50px;
+
+}
+
+.cont1 h2 {
+    position: absolute;
+    color: rgb(51, 50, 50);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    left: 45%;
+    top: 69%;
+    transition: opacity 0.2s ease;
+    opacity: 0;
+}
+
+.cont1 h2::first-letter {
+    color: rgb(183, 20, 20);
+}
+
+.cont1:hover h2 {
+    opacity: 1;
+}
+
+.cont1 p {
+    color: rgb(36, 36, 32);
+    padding-left: 44%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 450;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.cont1:hover p {
+    opacity: 1;
+}
+
+.cont1:hover {
+    opacity: 1;
+    box-shadow: 10px 16px 10px #212121;
+    transform: translateY(-5px);
+    background: radial-gradient(#e4dede, #e3dedc);
+
+}
+
+/* ------------------------------------------------cont2----------------------------------------*/
+.cont2 {
+    height: 420px;
+    width: 540px;
+    background: radial-gradient(rgb(112, 110, 110), #4b4747);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.cont2 img {
+    height: 85%;
+    width: 86%;
+    object-fit: fill;
+    margin-top: 8px;
+    margin-left: 30px;
+}
+
+.cont2 h2 {
+    position: absolute;
+    color: rgb(51, 50, 50);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    left: 45%;
+    top: 70%;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.cont2 h2::first-letter {
+    color: rgb(183, 20, 20);
+}
+
+.cont2:hover h2 {
+    opacity: 1;
+}
+
+.cont2 .para {
+    margin-bottom: 36px;
+    margin-top: -30px;
+}
+
+.cont2 p {
+    color: rgb(36, 36, 32);
+    padding-left: 44%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 450;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.cont2:hover p {
+    opacity: 1;
+}
+
+.cont2:hover {
+    opacity: 1;
+    box-shadow: 10px 16px 10px #212121;
+    transform: translateY(-5px);
+    background: radial-gradient(#e4dede, #e3dedc);
+
+}
+
+/* ---------------------------------------------cont3---------------------------------------------- */
+#third {
+    height: 75%;
+    width: 86%;
+    object-fit: fill;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+#third-gun {
+    position: absolute;
+    color: rgb(51, 50, 50);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    left: 45.2%;
+    top: 69%;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.para3 {
+    color: rgb(36, 36, 32);
+    margin-top: -14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 450;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.cont1:hover .para3 {
+    opacity: 1;
+}
+
+#third-gun::first-letter {
+    color: rgb(183, 20, 20);
+}
+
+.cont1:hover #third-gun {
+    opacity: 1;
+}
+
+/* -----------------------------------------------cont4---------------------------------------- */
+#fourth {
+    height: 85%;
+    width: 86%;
+    object-fit: fill;
+    margin-top: 8px;
+    margin-left: 30px;
+}
+
+#fourth-gun {
+    position: absolute;
+    color: rgb(51, 50, 50);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    left: 45%;
+    top: 69%;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+#fourth-gun::first-letter {
+    color: rgb(183, 20, 20);
+}
+
+.cont2:hover #fourth-gun {
+    opacity: 1;
+}
+
+/*--------------------------------------------SLIDER-------------------------------------------- */
+.slider {
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+
+}
+
+.slide-track {
+    display: flex;
+    width: calc(250px * 16);
+    animation: scroll 35s linear infinite;
+}
+
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-300px * 8));
+    }
+}
+
+.slide {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+
+.slide #img4 {
+    margin-top: -22px;
+}
+
+.slide #img5 {
+    margin-top: -10px;
+}
+
+.slide #img6 {
+    margin-top: 10px;
+}
+
+.slide #img7 {
+    margin-top: -13px;
+}
+
+#tex7 {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.slide #img8 {
+    margin-top: 10px;
+}
+
+#tex8 {
+    margin-top: 32px;
+    margin-left: 30px;
+}
+
+.gun-text {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.slide:hover .gun-text {
+    opacity: 1;
+}
+
+img {
+    width: 100%;
+    transition: transform 0.27s;
+}
+
+img:hover {
+    transform: translateZ(20px);
+}
+
+/* -------------gradient shadows of slider----------------------- */
+
+.slider::before,
+.slider::after {
+    content: '';
+    background: linear-gradient(to right, #625d5d 0%, rgba(76, 66, 66, 0) 100%);
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+    top: 0;
+}
+
+.slider::before {
+    left: 0;
+}
+
+.slider::after {
+    right: 0;
+    background: linear-gradient(to left, #625d5d 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+
+/* ----------------------------------Revolvers------------------------------------------------ */
+
+.revolvers {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+
+.revolvers .title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* ------------------------------------------seventh-------------------------------------------------------- */
+#seventh {
+    height: 90%;
+    width: 96%;
+    object-fit: fill;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+.para7 {
+    color: rgb(36, 36, 32);
+    margin-top: -55px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 450;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.cont1:hover .para7 {
+    opacity: 1;
+}
+
+/* -----------------------------------eighth------------------------------------------------------------------- */
+
+#eighth {
+    height: 81%;
+    width: 89%;
+    object-fit: fill;
+    margin-top: 39px;
+    margin-right: -60px;
+    margin-left: 10px;
+}
+
+#eighth-gun {
+    position: absolute;
+    color: rgb(51, 50, 50);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    left: 49%;
+    top: 70%;
+    transition: opacity 0.3s ease;
+}
+
+.para8 {
+    color: rgb(36, 36, 32);
+    margin-top: -45px;
+    margin-right: -40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 450;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.cont2:hover .para8 {
+    opacity: 1;
+}
+
+/* ------------------------------------------slider 2---------------------------------------- */
+
+.slider2 {
+    height: 300px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track2 {
+    display: flex;
+    width: calc(250px * 10);
+    animation: scroll 25s linear infinite;
+}
+
+.slide-track2:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-300px * 5));
+    }
+}
+
+.slide2 {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+.slide2 img {
+    height: 200px;
+    width: 300px;
+    transition: transform 0.27s;
+}
+
+.slide2:hover .gun-text {
+    opacity: 1;
+}
+
+img:hover {
+    transform: translateZ(20px);
+}
+
+/* -------------gradient shadows----------------------- */
+
+.slider2::before,
+.slider2::after {
+    content: '';
+    background: linear-gradient(to right, #625d5d 0%, rgba(255, 255, 255, 0) 100%);
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+    top: 0;
+}
+
+.slider2::before {
+    left: 0;
+}
+
+.slider2::after {
+    right: 0;
+    background: linear-gradient(to left, #625d5d 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* --------------------------------------button---------------------------- */
+button {
+    height: 40px;
+    width: 170px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 83%;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid rgb(181, 175, 175);
+    border-radius: 5px;
+    color: rgb(253, 250, 250);
+    font-weight: 600;
+    font-size: 25px;
+    position: relative;
+    transition: all linear 0.4s;
+    overflow: hidden;
+
+}
+
+button a {
+    text-decoration: none;
+    color: rgb(250, 246, 246);
+}
+
+button::after {
+    content: '';
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(30, 29, 29);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: all linear 0.3s;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: -1;
+}
+
+button:hover::after {
+    transform: translate(-50%, -50%) scale(5);
+}
+
+button:hover a {
+    color: #ff0000;
+}
+
+
+
+/* ---------------------------footer--------------------------------------- */
+footer {
+    position: relative;
+    background: #53585e;
+    text-align: center;
+    padding: 0px 20px 20px;
+    color: #ffffff;
+}
+
+
+footer .social-icons {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer .social-icons a {
+    text-decoration: none;
+}
+
+footer .social-icons li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+footer .social-icons li a {
+    color: #fff;
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+footer .social-icons li i:hover {
+    color: rgb(152, 28, 9);
+}
+
+
+footer .menu {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+footer .menu li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+footer .menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.1s;
+}
+
+footer .menu li a:hover {
+    transform: translateY(-5px);
+    color: #c90000;
+}
+
+footer p {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+footer img {
+    height: 50px;
+    width: 50px;
+    margin-bottom: -20px;
+}
+
+#vault::first-letter {
+    color: #c90000;
+}
+
+.wave svg {
+    display: block;
+}
+
+
+/* -------------------------------------------media query---------------------------- */
+@media only screen and (max-width:600px) {}
